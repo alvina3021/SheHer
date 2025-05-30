@@ -6,6 +6,8 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Hash;
 use App\Models\User;
 
+use Illuminate\Support\Facades\Auth;
+
 class RegisterController extends Controller
 {
     public function register(Request $request)
@@ -22,6 +24,9 @@ $user = User::create([
     'password' => $validated['password'], // tanpa Hash::make()
 ]);
 
-        return response()->json(['message' => 'User registered successfully']);
+        // Login otomatis setelah register
+        Auth::login($user);
+
+        return redirect('/home');
     }
 }

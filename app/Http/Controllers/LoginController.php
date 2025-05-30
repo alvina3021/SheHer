@@ -20,14 +20,12 @@ class LoginController extends Controller
         if (Auth::attempt($credentials)) {
             $request->session()->regenerate();
 
-            return response()->json([
-                'message' => 'Login successful',
-                'user' => Auth::user(),
-            ]);
+            return redirect('/home');
         }
 
-        return response()->json([
-            'message' => 'The provided credentials do not match our records.'
-        ], 401);
+        return back()->withErrors([
+            'email' => 'Email atau password salah.',
+        ])->onlyInput('email');
+
     }
 }
