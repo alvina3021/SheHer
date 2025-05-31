@@ -1,67 +1,70 @@
-<!-- resources/views/home.blade.php -->
-<!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <title>SheHer</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-    <style>
-        body { font-family: sans-serif; }
-        .hero { background-color: #fff; padding: 60px 0; }
-        .cta-btn { background-color: #C026D3; color: #fff; }
-        .cta-btn:hover { background-color: #a01aa9; }
-        footer { background-color: #111; color: white; padding: 40px 0; }
-    </style>
-</head>
-<body>
+@extends('layouts.app')
 
-<!-- Header -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-black px-5">
-    <a class="navbar-brand text-white fw-bold" href="#">She<span style="color:#C026D3;">Her</span></a>
-    <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#">Beranda</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Artikel</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Diskusi</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Kebijakan</a></li>
-    </ul>
-</nav>
+@section('content')
+<div class="bg-white min-h-screen flex flex-col justify-between">
 
-<!-- Hero Section -->
-<section class="hero text-center container">
-    <h1 class="fw-bold">Bukan Sulap <br>Bukan <span style="color:#C026D3;">SheHer</span></h1>
-    <p class="mt-3">"She Her adalah ruang aman untuk perempuan berbagi pengalaman dan mendorong kebijakan yang setara."</p>
-    <a href="{{ route('register') }}" class="btn cta-btn mt-3">Bergabung</a>
-    <div class="mt-4">
-        <img src="/images/hero-illustration.png" alt="Illustration" class="img-fluid" style="max-width:400px;">
-    </div>
-</section>
+    <!-- Header -->
+    <header class="bg-black text-white px-8 py-4 flex justify-between items-center">
+        <div class="flex items-center gap-2 text-xl font-bold">
+            <span class="bg-white text-black px-2 py-1 rounded">She</span><span class="text-pink-500">Her</span>
+        </div>
+        <nav class="space-x-6 font-semibold">
+            <a href="#" class="hover:text-pink-500">Beranda</a>
+            <a href="#" class="hover:text-pink-500">Artikel</a>
+            <a href="#" class="hover:text-pink-500">Proyek</a>
+            <a href="#" class="hover:text-pink-500">Komunitas</a>
+        </nav>
+    </header>
 
-<!-- Middle Section -->
-<section class="text-center py-5">
-    <div class="container bg-light p-4 rounded shadow">
-        <h5>We Are The United Nations Global Solidarity Movement For Gender Equality</h5>
-        <p class="text-muted mt-2">SheHer is an initiative to recruit men and people of all genders to stand in solidarity with women to create a bold, visible and united force for gender equality.</p>
-    </div>
-</section>
+    <!-- Hero Section -->
+    <section class="px-8 py-16 text-center">
+        <h1 class="text-4xl md:text-5xl font-bold mb-4">
+            Bukan Sulap<br><span class="text-pink-500">Bukan SheHer</span>
+        </h1>
+        <p class="text-gray-700 mb-6">
+            Sebuah aksi nyata menuju inklusi perempuan, perlindungan kelompok rentan, dan membongkar yang harusnya dirubuhkan.
+        </p>
+        <button class="bg-pink-600 text-white px-6 py-3 rounded-full hover:bg-pink-700 transition">
+            Bergabung
+        </button>
+        <div class="mt-12">
+            <img src="{{ asset('images/hero-image.png') }}" alt="Hero Image" class="mx-auto w-72 md:w-96">
+        </div>
+    </section>
 
-<!-- Call to Action -->
-<section class="text-center py-4">
-    <h4>Be the Change</h4>
-    <p class="text-muted">Jadi agen perubahan. Gender equality adalah tujuan untuk semua orang! Kampanye ini mengajak semua orang, tanpa memandang gender, untuk ikut memperjuangkan kesetaraan di rumah, tempat kerja, dan masyarakat.</p>
-    <a href="{{ route('login') }}" class="btn cta-btn">Diskusi</a>
-</section>
+    <!-- Info Card -->
+    <section class="px-6 md:px-16 py-8">
+        <div class="bg-gray-100 p-8 rounded-lg shadow-lg text-center max-w-3xl mx-auto">
+            <h2 class="text-lg font-semibold text-pink-600 uppercase mb-2">Deklarasi</h2>
+            <p class="text-xl font-bold mb-4">We Are The United Nations Global Solidarity Movement for Gender Equality</p>
+            <p class="text-gray-700">
+                Ini bukan tentang siapa yang paling kuat. Ini tentang siapa yang berani berubah. Dunia tidak akan berubah sendiri.
+                Dibutuhkan solidaritas dan tindakan nyata dari kita semua. Mari bergerak bersama untuk kesetaraan.
+            </p>
+        </div>
+    </section>
 
-<!-- Footer -->
-<footer class="text-center">
-    <div class="container">
-        <h5>She<span style="color:#C026D3;">Her</span></h5>
-        <ul class="list-unstyled">
-            <li><a href="#" class="text-white">About Us</a></li>
-            <li><a href="#" class="text-white">Get Involved</a></li>
-            <li><a href="#" class="text-white">Contact Us</a></li>
-        </ul>
-    </div>
-</footer>
+    <!-- Call to Action -->
+    <section class="text-center px-6 md:px-16 py-8">
+        <h2 class="text-2xl font-bold mb-4">Be the Change</h2>
+        <p class="text-gray-700 mb-6">
+            Perubahan dimulai dari langkah kecil. Jadilah bagian dari gerakan ini dan bawa dampak positif ke sekelilingmu.
+        </p>
+        <button class="bg-pink-600 text-white px-6 py-3 rounded-full hover:bg-pink-700 transition">
+            Dukung!
+        </button>
+    </section>
 
-</body>
-</html>
+    <!-- Footer -->
+    <footer class="bg-black text-white px-8 py-6 text-sm flex justify-between items-center">
+        <div class="flex items-center gap-2 font-bold">
+            <span class="bg-white text-black px-2 py-1 rounded">She</span><span class="text-pink-500">Her</span>
+        </div>
+        <div>
+            © 2025 | Tim SheHer<br>
+            Gender Equality Project
+        </div>
+    </footer>
+
+</div>
+@endsection
