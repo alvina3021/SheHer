@@ -5,7 +5,6 @@
 @section('content')
 <!-- <div class="bg-white min-h-screen flex flex-col justify-between">
 
-    <!-- Header -->
     <!--<header class="bg-black text-white px-8 py-4 flex justify-between items-center">
         <div class="flex items-center gap-2 text-xl font-bold">
             <span class="bg-white text-black px-2 py-1 rounded">She</span><span class="text-pink-500">Her</span>
@@ -98,7 +97,7 @@
     <div class="header-logo">
         <div class="logo-box"></div>
         <div class="logo-text">
-            <span class="text-she">She</span><span class="text-her">Her</span>
+            <span class="HeroText-she">She</span><span class="HeroText-her">Her</span>
         </div>
     </div>
 

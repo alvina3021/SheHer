@@ -2,3 +2,5 @@
 @import "tailwindcss/utilities";
 
 @import './pages/home.css';
+@import './pages/login.css';
+@import './pages/register.css';

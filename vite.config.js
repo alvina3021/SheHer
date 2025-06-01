@@ -8,6 +8,8 @@ export default defineConfig({
             input: [
                 'resources/css/app.css', 
                 'resources/css/pages/home.css', //tambahan
+                'resources/css/pages/login.css', //tambahan
+                'resources/css/pages/register.css', //tambahan
                 'resources/js/app.js'],
             refresh: true,
         }),

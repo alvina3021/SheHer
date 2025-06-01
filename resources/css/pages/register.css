@@ -1,0 +1,79 @@
+.register-container {
+  background-color: #f7faff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.register-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 16px rgba(0,0,0,0.05);
+  width: 100%;
+  max-width: 400px;
+}
+
+.register-form .form-group {
+  margin-bottom: 1rem;
+}
+
+.register-form label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.register-form input[type="text"],
+.register-form input[type="email"],
+.register-form input[type="password"] {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+}
+
+.form-check {
+  margin-bottom: 1.5rem;
+  font-size: 0.875rem;
+}
+
+.form-check input {
+  margin-right: 0.5rem;
+}
+
+.btn-register {
+  background-color: #a21caf;
+  color: white;
+  border: none;
+  padding: 0.75rem;
+  width: 100%;
+  border-radius: 9999px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.register-divider {
+  text-align: center;
+  margin: 1rem 0;
+  color: #6b7280;
+  font-size: 0.875rem;
+}
+
+.register-socials {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.register-socials button {
+  flex: 1;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 9999px;
+  background: white;
+  cursor: pointer;
+}
