@@ -34,6 +34,24 @@
 .HeroText-her {
   color: #a21caf;
 }
+
+.nav-links {
+  display: flex;
+  gap: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+  color: #a21caf;
+}
+
 /* Hero Section */
 .hero {
   padding: 4rem 2rem;
@@ -90,25 +108,6 @@
   color: #000000;
   margin-bottom: 2rem;
   margin-left: 20px;
-}
-
-.btn-primary {
-  background-color: #db2777;
-  margin-left: 20px;
-  color: #ffffff;
-  padding: 0.75rem 1.5rem;
-  border-radius: 9999px;
-  border: none;
-  cursor: pointer;
-  text-decoration: none;
-  /* display: inline-block; */
-  font-weight: 600;
-  font-size: 1rem;
-  transition: background-color 0.3s ease;
-}
-
-.btn-primary:hover {
-  background-color: #be185d;
 }
 
 .hero-image {

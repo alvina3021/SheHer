@@ -1,6 +1,17 @@
 {{-- resources/views/auth/register.blade.php --}}
 @extends('layouts.app')
 
+<link href="{{ asset('css/output.css') }}" rel="stylesheet">
+@if ($errors->any())
+    <div class="alert-error">
+        <ul>
+            @foreach ($errors->all() as $error)
+                <li>{{ $error }}</li>
+            @endforeach
+        </ul>
+    </div>
+@endif
+
 @section('content')
 <div class="register-container">
     <form class="register-form" method="POST" action="{{ route('register') }}">
@@ -35,12 +46,12 @@
 
         <button type="submit" class="btn-register">Daftar Sekarang</button>
 
-        <div class="register-divider">atau daftar dengan</div>
+        <!--<div class="register-divider">atau daftar dengan</div> -->
 
-        <div class="register-socials">
-            <button type="button" class="btn-google">🔴 Google</button>
-            <button type="button" class="btn-github">⚫ GitHub</button>
-        </div>
+        <!--<div class="register-socials">
+            <button type="button" class="btn-google"> Google</button>
+            <button type="button" class="btn-github"> GitHub</button>
+        </div> -->
     </form>
 </div>
 @endsection

@@ -101,13 +101,13 @@
         </div>
     </div>
 
-    <nav class="nav-links">
+    <!-- <nav class="nav-links">
         <a href="#" class="nav-link">Beranda</a>
         <a href="#" class="nav-link">Artikel</a>
-        <a href="#" class="nav-link">Diskusi</a>
-        <a href="#" class="nav-link">Kebijakan</a>
-    </nav>
-</header>
+        <!--<a href="#" class="nav-link">Diskusi</a>
+        <a href="#" class="nav-link">Tambah Artikel</a>
+    </nav> -->
+</header> 
 
 <!-- Hero Section -->
 <section class="hero">
@@ -120,7 +120,8 @@
       <p class="hero-subtitle">
         "She Her adalah ruang amal untuk perempuan berbagi pengalaman dan mendorong kebijakan yang setara."
       </p>
-      <a href="#" class="btn-primary">Bergabung</a>
+      <!-- supaya bisa ke login -->
+      <a href="{{ route('login') }}" class="btn-primary">Bergabung</a>
     </div>
     <div class="hero-image">
       <img src="{{ asset('images/hero-image.png') }}" alt="Hero Image" class="hero-img">
@@ -148,7 +149,6 @@
         Solution based on their commitment. SheHer also provides impactful resources to supporters 
         all over the globe who are doing their part for a more equal world.
     </p>
-    <button class="btn-primary">Diskusi</button>
 </section>
 
 <!-- Footer -->
@@ -165,6 +165,4 @@
         <li>Contact Us</li>
     </ul>
 </footer>
-
-
 @endsection

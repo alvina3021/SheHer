@@ -4,3 +4,7 @@
 @import './pages/home.css';
 @import './pages/login.css';
 @import './pages/register.css';
+@import './pages/home2.css';
+@import './pages/auth.css';
+@import './pages/artikel/create.css';
+@import './pages/artikel/index.css';

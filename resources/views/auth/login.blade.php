@@ -2,8 +2,15 @@
 
 <link href="{{ asset('css/output.css') }}" rel="stylesheet">
 
+@if (session('status'))
+    <div class="alert-success">
+        {{ session('status') }}
+    </div>
+@endif
+
 {{-- resources/views/auth/login.blade.php --}}
 @section('content')
+<body class="login-body">
 <div class="login-container">
     <form class="login-form" method="POST" action="{{ route('login') }}">
         @csrf
@@ -16,9 +23,10 @@
         <input type="password" name="password" id="password" required>
 
         <div class="login-options">
-            <label>
-                <input type="checkbox" name="remember"> Ingat saya
-            </label>
+            <div class="remember-me">
+                <input type="checkbox" name="remember" id="remember" class="checkbox">
+                <label for="remember" class="checkbox-label">Ingat saya</label>
+            </div>
             <a href="{{ route('password.request') }}" class="login-forgot">Lupa password?</a>
         </div>
 
@@ -26,12 +34,9 @@
 
         <div class="login-divider">atau</div>
 
-        <button type="button" class="btn-secondary">Email Satu Kali</button>
+        <a href="{{ route('register') }}" class="btn-secondary text-center block">Buat Akun Baru</a>
 
-        <div class="login-socials">
-            <button type="button" class="btn-google">🔴 Google</button>
-            <button type="button" class="btn-github">⚫ GitHub</button>
-        </div>
     </form>
 </div>
+</body>
 @endsection
