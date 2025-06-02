@@ -13,9 +13,9 @@
     </div>
 
     <nav class="nav-links">
-        <a href="#" class="nav-link">Beranda</a>
-        <a href="#" class="nav-link">Artikel</a>
-        <a href="#" class="nav-link">Tambah Artikel</a>
+        <a href="{{ route('home2') }}" class="nav-link">Beranda</a>
+        <a href="{{ route('artikel.index') }}" class="nav-link">Artikel</a>
+        <a href="{{ route('artikel.create') }}" class="nav-link">Tambah Artikel</a>
     </nav>
 </header>
 

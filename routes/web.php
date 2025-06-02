@@ -8,6 +8,7 @@ use App\Http\Controllers\Auth\ForgotPasswordController;
 use App\Http\Controllers\Auth\ResetPasswordController;
 use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Home2Controller;
+use App\Http\Controllers\ArtikelController;
 use Illuminate\Support\Facades\Password;
 
 Route::get('/', [HomeController::class, 'index']);
@@ -44,6 +45,15 @@ Route::post('/register', [RegisterController::class, 'register']);
 // Home2Controller untuk halaman home2
 Route::get('/home2', [Home2Controller::class, 'index'])->name('home2');
 
+// ArtikelController untuk halaman artikel
+Route::get('/artikel/create', [ArtikelController::class, 'create'])->name('artikel.create');
+
+Route::post('/artikel', [ArtikelController::class, 'store'])->name('artikel.store');
+
+Route::get('/artikel', [ArtikelController::class, 'index'])->name('artikel.index');
+
+//untuk menampilkan artikel ketika di klik
+Route::get('/artikel/{id}', [ArtikelController::class, 'show'])->name('artikel.show');
 
 
 
