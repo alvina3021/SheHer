@@ -44,7 +44,7 @@
     </div>
 
     <div class="see-more-container">
-        <a href="#" class="see-more-button">SEE MORE</a>
+        <!--<a href="#" class="see-more-button">SEE MORE</a>-->
     </div>
 </div>
 @endsection
