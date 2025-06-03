@@ -1496,8 +1496,8 @@
 /* Container dengan batas lebar yang lebih besar */
 
 .artikel-detail-container {
-  width: 90%;
-  max-width: 1100px;
+  width: 100%;
+  max-width: auto;
   padding: 0 20px;
   font-family: sans-serif;
   color: #333;
@@ -1516,7 +1516,7 @@
 
 .artikel-header {
   text-align: center;
-  margin-bottom: 30px;
+  margin: 0 auto 30px auto;
 }
 
 .artikel-judul {
@@ -1524,6 +1524,9 @@
   font-weight: bold;
   margin-bottom: 5px;
   text-align: center;
+  margin: 0 auto 10px auto;
+  word-break: break-word;
+  max-width: 100%;
 }
 
 .artikel-tanggal {
@@ -1537,8 +1540,8 @@
   height: 4px;
   background-color: #b20080;
   margin: 10px auto;
+  /* auto untuk center horizontal */
   border-radius: 2px;
-  align-items: center;
 }
 
 .artikel-detail-img {
