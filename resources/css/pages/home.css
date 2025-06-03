@@ -1,25 +1,31 @@
 @charset "UTF-8";
 /* Custom Header Styles */
 .header {
-  background-color: #000000;
-  color: #ffffff;
-  padding: 1rem 2.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  border-bottom: 1px solid #ffffff;
+  background-color: #000;
+  color: #fff;
+  padding: 0.2rem 0.5rem; /* lebih kecil */
+  min-height: 20px;       /* lebih kecil */
 }
 
 .header-logo {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  justify-content: center;
+  gap: 0.5rem;
 }
 
-.logo-box {
-  width: 3rem;
-  height: 3rem;
-  background-color: #d1d5db;
+.logo-container {
+  margin-top: -8px; /* atau 0, atau bisa lebih negatif jika ingin lebih naik */
+  padding: 1px;
+}
+
+.logo-img {
+  height: 60px !important;
+  width: 60px !important;
+  display: block;
+  margin: 0 auto;
+  margin-top: -40px; /* atau 0, atau bisa lebih negatif jika ingin lebih naik */
+  padding: 1px;
 }
 
 .logo-text {
@@ -93,7 +99,7 @@
 }
 
 .btn-primary {
-  background-color: #db2777;
+  background-color: 960F7B;
   margin-left: 20px;
   color: #ffffff;
   padding: 0.75rem 1.5rem;
@@ -108,7 +114,7 @@
 }
 
 .btn-primary:hover {
-  background-color: #be185d;
+  background-color: #62117a;
 }
 
 .hero-image {
@@ -232,29 +238,38 @@
   border-bottom: 1px solid #ffffff;
 }
 
-.footer-logo {
+.footer-container {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
-.footer-box {
-  width: 3rem;
-  height: 3rem;
-  background-color: #d1d5db;
+.footer-gambar {
+  width: 100px;
+  height:100px;
+  background-color: #000000;
+}
+
+.footer-gambar img {
+  width: 80px;
+  height:80px;
+  margin-top: 16px; /* tambahkan ini, bisa disesuaikan */
 }
 
 .footer-text {
   font-size: 1.5rem;
   font-weight: 700;
+  margin-left: 0;
 }
 
 .footer-she {
   color: #ffffff;
+  margin-left: 0;
 }
 
 .footer-her {
   color: #a21caf;
+  margin-right: 880px;
 }
 
 .footer-pilihan {

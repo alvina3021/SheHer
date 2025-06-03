@@ -5,8 +5,11 @@
 @section('content')
 <!-- Header -->
 <header class="header">
-    <div class="header-logo">
-        <div class="logo-box"></div>
+    <div class="header-lgo">
+            <!-- Logo Section -->
+        <div class="lgo-contaner" style="text-align: center; margin-top: 40px;">
+            <img src="{{ asset('images/Logo-baru.png') }}" alt="Logo SheHer" class="logo-img" style="height: 60px;">
+        </div>
         <div class="logo-text">
             <span class="HeroText-she">She</span><span class="HeroText-her">Her</span>
         </div>
@@ -32,7 +35,7 @@
       </p>
     </div>
     <div class="hero-image">
-      <img src="{{ asset('images/hero-image.png') }}" alt="Hero Image" class="hero-img">
+      <img src="{{ asset('images/hero-image.jpg') }}" alt="Hero Image" class="hero-img">
     </div>
   </div>
 </section>
@@ -61,8 +64,10 @@
 
 <!-- Footer -->
 <footer class="footer">
-    <div class="footer-logo">
-        <div class="footer-box"></div>
+    <div class="footer-contaier">
+        <div class="footer-lg">
+            <img src="{{ asset('images/Logo-baru.png') }}" alt="Logo SheHer" class="logo-img" style="height: 60px;">
+        </div>
             <div class= "footer-text">
                 <span class="footer-she">She</span><span class="footer-her">Her</span>
             </div>

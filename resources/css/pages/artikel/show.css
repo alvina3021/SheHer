@@ -51,50 +51,94 @@
   color: #a21caf;
 }
 
-.artikel-detail-container {
-    padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
-    background: white;
+/* Wrapper agar konten lebih lebar */
+.artikel-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 40px 0;
+    background-color: #fff;
 }
 
+/* Container dengan batas lebar yang lebih besar */
+.artikel-detail-container {
+    width: 90%;
+    max-width: 1100px;
+    padding: 0 20px;
+    font-family: sans-serif;
+    color: #333;
+}
+
+/* Tombol kembali dengan panah kiri sejajar */
 .back-link {
-    color: #cc007a;
-    text-decoration: none;
+    display: flex;
+    align-items: center;
     font-weight: bold;
-    display: inline-block;
-    margin-bottom: 1rem;
+    color: #b20080;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
+.artikel-header {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .artikel-judul {
-    font-size: 2rem;
+    font-size: 32px;
     font-weight: bold;
+    margin-bottom: 5px;
     text-align: center;
-    margin-bottom: 0.5rem;
 }
 
 .artikel-tanggal {
+    font-size: 14px;
+    color: #666;
     text-align: center;
-    color: gray;
-    margin-bottom: 1.5rem;
+}
+
+.artikel-line {
+    width: 50px;
+    height: 4px;
+    background-color: #b20080;
+    margin: 10px auto;
+    border-radius: 2px;
+    align-items: center;
 }
 
 .artikel-detail-img {
-    display: block;
     width: 100%;
     height: auto;
-    border-radius: 1rem;
-    margin-bottom: 2rem;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    background-color: #ccc;
 }
 
-.artikel-subjudul {
-    font-size: 1.5rem;
-    font-weight: 600;
-    margin-bottom: 1rem;
+.artikel-detail-placeholder {
+    background-color: #eee;
+    height: 250px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #888;
+    margin-bottom: 30px;
 }
 
 .artikel-isi {
+    font-size: 16px;
     line-height: 1.8;
-    text-align: justify;
-    font-size: 1rem;
+    white-space: pre-line;
+    text-align:justify;
+}
+
+.footer-show {
+  background-color: #000000;
+  color: #ffffff;
+  padding: 1rem 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ffffff;
+  height: 80px;
 }

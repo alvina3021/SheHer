@@ -11,6 +11,12 @@
 {{-- resources/views/auth/login.blade.php --}}
 @section('content')
 <body class="login-body">
+
+<!-- Logo Section -->
+<div class="logo-content" style="text-align: center; margin-top: 40px;">
+    <img src="{{ asset('images/Logo.jpg') }}" alt="Logo SheHer" class="logo-img" style="height: 60px;">
+</div>
+
 <div class="login-container">
     <form class="login-form" method="POST" action="{{ route('login') }}">
         @csrf

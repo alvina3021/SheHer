@@ -5,8 +5,11 @@
 @section('content')
 <!-- Header -->
 <header class="header">
-    <div class="header-logo">
-        <div class="logo-box"></div>
+    <div class="header-lgo">
+            <!-- Logo Section -->
+        <div class="lgo-contaner" style="text-align: center; margin-top: 40px;">
+            <img src="{{ asset('images/Logo-baru.png') }}" alt="Logo SheHer" class="logo-img" style="height: 60px;">
+        </div>
         <div class="logo-text">
             <span class="HeroText-she">She</span><span class="HeroText-her">Her</span>
         </div>
@@ -20,9 +23,12 @@
 </header>
 
 <div class="artikel-index-container">
-    <h1 class="artikel-heading">Artikel</h1>
-    <p class="artikel-subheading">Check out the latest inspiring stories from around the world.</p>
-
+    <div class="artikel-header">
+        <div class="artikel-line"></div>
+        <h1 class="artikel-heading">Artikel</h1>
+        <p class="artikel-subheading">Check out the latest inspiring stories from around the world.</p>
+    </div>
+</div>
     <div class="artikel-grid">
         @forelse($artikels as $artikel)
             <a href="{{ route('artikel.show', $artikel->id) }}" class="artikel-card">
@@ -47,5 +53,7 @@
         <!--<a href="#" class="see-more-button">SEE MORE</a>-->
     </div>
 </div>
+<footer class="footer-index">
+</footer>
 @endsection
 

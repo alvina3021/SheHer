@@ -13,6 +13,11 @@
 @endif
 
 @section('content')
+<!-- Logo Section -->
+<div class="logo-containe" style="text-align: center; margin-top: 40px;">
+    <img src="{{ asset('images/Logo.jpg') }}" alt="Logo SheHer" class="logo-img" style="height: 60px;">
+</div>
+
 <div class="register-container">
     <form class="register-form" method="POST" action="{{ route('register') }}">
         @csrf

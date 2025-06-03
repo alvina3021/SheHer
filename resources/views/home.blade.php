@@ -95,19 +95,15 @@
 <!-- Header -->
 <header class="header">
     <div class="header-logo">
-        <div class="logo-box"></div>
+            <!-- Logo Section -->
+        <div class="logo-container" style="text-align: center; margin-top: 40px;">
+            <img src="{{ asset('images/Logo-baru.png') }}" alt="Logo SheHer" class="logo-img" style="height: 60px;">
+        </div>
         <div class="logo-text">
             <span class="HeroText-she">She</span><span class="HeroText-her">Her</span>
         </div>
     </div>
-
-    <!-- <nav class="nav-links">
-        <a href="#" class="nav-link">Beranda</a>
-        <a href="#" class="nav-link">Artikel</a>
-        <!--<a href="#" class="nav-link">Diskusi</a>
-        <a href="#" class="nav-link">Tambah Artikel</a>
-    </nav> -->
-</header> 
+</header>
 
 <!-- Hero Section -->
 <section class="hero">
@@ -124,7 +120,7 @@
       <a href="{{ route('login') }}" class="btn-primary">Bergabung</a>
     </div>
     <div class="hero-image">
-      <img src="{{ asset('images/hero-image.png') }}" alt="Hero Image" class="hero-img">
+      <img src="{{ asset('images/hero-image.jpg') }}" alt="Hero Image" class="hero-img">
     </div>
   </div>
 </section>
@@ -144,17 +140,19 @@
 <section class="cta">
     <h2 class="cta-title">Be the Change</h2>
     <p class="cta-text">
-        As a global movement, SheHer partners with leaders who make tangible commitments towards 
-        accelerating gender equality. Known as HeForShe Champions, each partner generates a Proven 
-        Solution based on their commitment. SheHer also provides impactful resources to supporters 
+        As a global movement, SheHer partners with leaders who make tangible commitments towards
+        accelerating gender equality. Known as HeForShe Champions, each partner generates a Proven
+        Solution based on their commitment. SheHer also provides impactful resources to supporters
         all over the globe who are doing their part for a more equal world.
     </p>
 </section>
 
 <!-- Footer -->
 <footer class="footer">
-    <div class="footer-logo">
-        <div class="footer-box"></div>
+    <div class="footer-container">
+        <div class="footer-gambar">
+            <img src="{{ asset('images/Logo-baru.png') }}" alt="Logo SheHer" class="logo-img" style="height: 60px;">
+        </div>
             <div class= "footer-text">
                 <span class="footer-she">She</span><span class="footer-her">Her</span>
             </div>
