@@ -9,7 +9,6 @@ class Artikel extends Model
 {
      use HasFactory;
 
-    // Field yang bisa diisi (mass assignment)
     protected $fillable = [
         'judul',
         'isi',

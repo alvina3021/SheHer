@@ -48,10 +48,6 @@
             <p class="artikel-empty">Tidak ada artikel ditemukan.</p>
         @endforelse
     </div>
-
-    <div class="see-more-container">
-        <!--<a href="#" class="see-more-button">SEE MORE</a>-->
-    </div>
 </div>
 <footer class="footer-index">
 </footer>

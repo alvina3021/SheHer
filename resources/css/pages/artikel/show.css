@@ -1,4 +1,4 @@
-/* Custom Header Styles */
+/* Header Styles */
 .header {
   background-color: #000000;
   color: #ffffff;
@@ -53,7 +53,6 @@
   color: #a21caf;
 }
 
-/* Wrapper agar konten lebih lebar */
 .artikel-wrapper {
     display: flex;
     justify-content: center;
@@ -62,7 +61,6 @@
     background-color: #fff;
 }
 
-/* Container dengan batas lebar yang lebih besar */
 .artikel-detail-container {
     width: 100%;
     max-width: auto;
@@ -71,7 +69,7 @@
     color: #333;
 }
 
-/* Tombol kembali dengan panah kiri sejajar */
+/* Tombol kembali */
 .back-link {
     display: flex;
     align-items: center;

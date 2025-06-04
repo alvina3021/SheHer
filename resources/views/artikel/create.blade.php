@@ -81,6 +81,4 @@ function previewImage(event) {
 }
 </script>
     </form>
-<footer class = "footer-create">
-</footer>
 @endsection

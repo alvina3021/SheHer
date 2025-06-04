@@ -53,7 +53,6 @@
   color: #a21caf;
 }
 
-/* CONTAINER FORM */
 .create-article-container {
     max-width: 900px;
     margin: 40px auto;
@@ -61,20 +60,17 @@
     font-family: sans-serif;
 }
 
-/* JUDUL FORM */
 .form-title {
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 40px;
 }
 
-/* FORM ROW UMUM */
 .form-row {
     margin-bottom: 24px;
     width: 100%;
 }
 
-/* LABEL DI ATAS */
 .form-row label,
 .upload-box label,
 .textarea-box label {
@@ -90,8 +86,6 @@
     cursor: pointer;
 }
 
-
-/* INPUT TEXT & TANGGAL */
 .input-field {
     width: 100%;
     padding: 14px 24px;
@@ -101,13 +95,11 @@
     box-sizing: border-box;
 }
 
-/* THUMBNAIL DAN ISI ARTIKEL BERSEBELAHAN */
 .form-row.upload-textarea {
     display: flex;
     gap: 24px;
 }
 
-/* WRAPPER UNTUK UPLOAD DAN TEXTAREA (agar label keluar) */
 .upload-box,
 .textarea-box {
     flex: 1;
@@ -115,7 +107,6 @@
     flex-direction: column;
 }
 
-/* LABEL DI ATAS */
 .upload-box label,
 .textarea-box label {
     margin-bottom: 8px;
@@ -123,7 +114,6 @@
     font-size: 15px;
 }
 
-/* BOX THUMBNAIL STYLING */
 .upload-box input[type="file"] {
     position: absolute;
     top: 0; left: 0;
@@ -154,7 +144,6 @@
     border-radius: 16px;
 }
 
-/* TEXTAREA STYLING */
 .textarea-area {
     border: 1px solid #ccc;
     border-radius: 20px;
@@ -219,17 +208,4 @@
     border-radius: 999px;
     text-decoration: none;
     font-weight: bold;
-}
-
-/* FOOTER FIXED DI BAWAH */
-.footer-create {
-    background-color: #000;
-    color: #fff;
-    text-align: center;
-    padding: 1rem 0;
-    font-size: 14px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    width: 100%;
 }

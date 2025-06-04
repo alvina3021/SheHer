@@ -41,7 +41,6 @@
         <div class="login-divider">atau</div>
 
         <a href="{{ route('register') }}" class="btn-secondary text-center block">Buat Akun Baru</a>
-
     </form>
 </div>
 </body>

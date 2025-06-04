@@ -24,12 +24,6 @@ class ArtikelController extends Controller
         // Simpan file gambar
         $path = $request->file('thumbnail')->store('thumbnails', 'public');
 
-    // Simpan ke database
-    //\App\Models\Artikel::create([
-        //'judul' => $request->judul,
-        //'isi' => $request->isi,
-    //]);
-
     Artikel::create([
             'judul' => $request->judul,
             'isi' => $request->isi,

@@ -31,7 +31,6 @@
   display: block;
   margin: 0 auto;
   margin-top: -40px;
-  /* atau 0, atau bisa lebih negatif jika ingin lebih naik */
   padding: 1px;
 }
 
@@ -97,7 +96,6 @@
 
 .text-her {
   color: #a21caf;
-  /* Warna ungu sesuai gambar */
 }
 
 .hero-subtitle {
@@ -116,7 +114,6 @@
   border: none;
   cursor: pointer;
   text-decoration: none;
-  /* display: inline-block; */
   font-weight: 600;
   font-size: 1rem;
   transition: background-color 0.3s ease;
@@ -127,7 +124,6 @@
 }
 
 .hero-image {
-  /*margin-top: 3rem; */
   flex: 1;
   text-align: center;
 }
@@ -166,7 +162,6 @@
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
   text-align: center;
   max-width: 50rem;
-  /*margin: 0 auto; */
   position: relative;
 }
 
@@ -178,7 +173,6 @@
   width: 3rem;
   height: 0.25rem;
   background-color: #a21caf;
-  /* ungu */
   margin: 0 auto 1.25rem auto;
   border-radius: 9999px;
 }
@@ -222,7 +216,6 @@
   width: 2.5rem;
   height: 0.25rem;
   background-color: #a21caf;
-  /* Ungu */
   margin: 0 auto 1rem auto;
   border-radius: 9999px;
 }
@@ -241,7 +234,6 @@
   line-height: 1.6;
   margin: 0 auto 2rem auto;
   max-width: 48rem;
-  /*margin-bottom: 1.5rem; */
 }
 
 /* Footer */
@@ -254,10 +246,8 @@
   justify-content: space-between;
   align-items: center;
   border-top: 1px solid #ffffff;
-  /* perbaikan: border bawah bukan atas */
   width: 100%;
   flex-wrap: wrap;
-  /* agar responsive */
 }
 
 .footer-container {
@@ -328,7 +318,6 @@
   height: 100vh;
   font-family: 'Inter', sans-serif;
   margin: 0;
-  /* tidak ada margin */
 }
 
 .logo-content {
@@ -348,7 +337,6 @@
   width: 100%;
   max-width: 24rem;
   margin: 0 auto;
-  /* untuk memastikan form berada di tengah */
   justify-content: center;
   align-items: center;
 }
@@ -361,7 +349,6 @@
   width: 100%;
   max-width: 24rem;
   margin: 0 auto;
-  /* untuk memastikan form berada di tengah */
   justify-content: center;
   align-items: center;
   margin-top: 10px;
@@ -395,7 +382,6 @@
   margin-bottom: 1rem;
   font-size: 0.875rem;
   flex-wrap: nowrap;
-  /* Prevent wrapping */
 }
 
 .remember-me {
@@ -404,7 +390,6 @@
   display: inline-flex;
   gap: 0.5rem;
   white-space: nowrap;
-  /* Prevent label from wrapping */
 }
 
 .checkbox {
@@ -417,9 +402,7 @@
 .checkbox-label {
   cursor: pointer;
   margin: 0;
-  /* Ensure no margin adds height */
   line-height: 1;
-  /* Prevent excessive vertical spacing */
 }
 
 .login-forgot {
@@ -989,8 +972,6 @@
   color: #a21caf;
 }
 
-/* CONTAINER FORM */
-
 .create-article-container {
   max-width: 900px;
   margin: 40px auto;
@@ -998,22 +979,16 @@
   font-family: sans-serif;
 }
 
-/* JUDUL FORM */
-
 .form-title {
   font-size: 36px;
   font-weight: 700;
   margin-bottom: 40px;
 }
 
-/* FORM ROW UMUM */
-
 .form-row {
   margin-bottom: 24px;
   width: 100%;
 }
-
-/* LABEL DI ATAS */
 
 .form-row label,
 .upload-box label,
@@ -1030,8 +1005,6 @@
   cursor: pointer;
 }
 
-/* INPUT TEXT & TANGGAL */
-
 .input-field {
   width: 100%;
   padding: 14px 24px;
@@ -1041,14 +1014,10 @@
   box-sizing: border-box;
 }
 
-/* THUMBNAIL DAN ISI ARTIKEL BERSEBELAHAN */
-
 .form-row.upload-textarea {
   display: flex;
   gap: 24px;
 }
-
-/* WRAPPER UNTUK UPLOAD DAN TEXTAREA (agar label keluar) */
 
 .upload-box,
 .textarea-box {
@@ -1057,16 +1026,12 @@
   flex-direction: column;
 }
 
-/* LABEL DI ATAS */
-
 .upload-box label,
 .textarea-box label {
   margin-bottom: 8px;
   font-weight: 600;
   font-size: 15px;
 }
-
-/* BOX THUMBNAIL STYLING */
 
 .upload-box input[type="file"] {
   position: absolute;
@@ -1099,8 +1064,6 @@
   border: 1px solid #ccc;
   border-radius: 16px;
 }
-
-/* TEXTAREA STYLING */
 
 .textarea-area {
   border: 1px solid #ccc;
@@ -1171,21 +1134,7 @@
   font-weight: bold;
 }
 
-/* FOOTER FIXED DI BAWAH */
-
-.footer-create {
-  background-color: #000;
-  color: #fff;
-  text-align: center;
-  padding: 1rem 0;
-  font-size: 14px;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-
-/* Custom Header Styles */
+/* Header */
 
 .header {
   background-color: #000000;
@@ -1374,7 +1323,7 @@
   height: 80px;
 }
 
-/* Custom Header Styles */
+/* Header Styles */
 
 .header {
   background-color: #000000;
@@ -1429,8 +1378,6 @@
   color: #a21caf;
 }
 
-/* Wrapper agar konten lebih lebar */
-
 .artikel-wrapper {
   display: flex;
   justify-content: center;
@@ -1438,8 +1385,6 @@
   padding: 40px 0;
   background-color: #fff;
 }
-
-/* Container dengan batas lebar yang lebih besar */
 
 .artikel-detail-container {
   width: 100%;
@@ -1449,7 +1394,7 @@
   color: #333;
 }
 
-/* Tombol kembali dengan panah kiri sejajar */
+/* Tombol kembali */
 
 .back-link {
   display: flex;
