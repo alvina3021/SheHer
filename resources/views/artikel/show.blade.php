@@ -25,10 +25,15 @@
 <div class="artikel-wrapper">
     <div class="artikel-detail-container">
         <a href="{{ route('artikel.index') }}" class="back-link">← Kembali</a>
-        <div class="artikel-header">
+        <!--<div class="artikel-header">
             <h1 class="artikel-judul">{{ $artikel->judul }}</h1>
             <div class="artikel-tanggal">{{ $artikel->tanggal }}</div>
             <div class="artikel-line"></div>
+        </div> -->
+        <div class="text-center my-8 px-4">
+            <h1 class="text-2xl sm:text-3xl font-bold text-black">{{ $artikel->judul }}</h1>
+            <div class="w-12 h-1 bg-pink-700 rounded mx-auto my-3"></div>
+            <div class="text-sm text-gray-500">{{ $artikel->tanggal }}</div>
         </div>
         @if($artikel->thumbnail && file_exists(public_path('storage/' . $artikel->thumbnail)))
             <img src="{{ asset('storage/' . $artikel->thumbnail) }}" alt="Thumbnail" class="artikel-detail-img">

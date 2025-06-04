@@ -2,15 +2,6 @@
 @extends('layouts.app')
 
 <link href="{{ asset('css/output.css') }}" rel="stylesheet">
-@if ($errors->any())
-    <div class="alert-error">
-        <ul>
-            @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-            @endforeach
-        </ul>
-    </div>
-@endif
 
 @section('content')
 <!-- Logo Section -->
@@ -22,6 +13,15 @@
     <form class="register-form" method="POST" action="{{ route('register') }}">
         @csrf
 
+        @if ($errors->any())
+            <div class="alert-error">
+            <ul>
+                @foreach ($errors->all() as $error)
+                    <li>{{ $error }}</li>
+                @endforeach
+            </ul>
+        </div>
+    @endif
         <div class="form-group">
             <label for="name">Nama Lengkap</label>
             <input type="text" name="name" id="name" required>
@@ -50,13 +50,6 @@
         </div>
 
         <button type="submit" class="btn-register">Daftar Sekarang</button>
-
-        <!--<div class="register-divider">atau daftar dengan</div> -->
-
-        <!--<div class="register-socials">
-            <button type="button" class="btn-google"> Google</button>
-            <button type="button" class="btn-github"> GitHub</button>
-        </div> -->
     </form>
 </div>
 @endsection

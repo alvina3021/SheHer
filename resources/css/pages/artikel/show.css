@@ -7,6 +7,8 @@
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ffffff;
+  gap: 2rem;      
+  padding: 1rem 2.5rem;
 }
 
 .header-logo {
@@ -104,7 +106,7 @@
     width: 50px;
     height: 4px;
     background-color: #b20080;
-    margin: 10px auto;      /* auto untuk center horizontal */
+    margin: 10px auto;      
     border-radius: 2px;
 }
 

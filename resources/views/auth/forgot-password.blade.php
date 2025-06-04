@@ -3,10 +3,6 @@
 <link href="{{ asset('css/output.css') }}" rel="stylesheet">
 
 @section('content')
-<!-- Logo Section -->
-<div class="log-conten" style="text-align: center; margin-top: 50px;">
-    <img src="{{ asset('images/Logo.jpg') }}" alt="Logo SheHer" class="logo-img" style="height: 60px;">
-</div>
 <div class="auth-container">
     <form method="POST" action="{{ route('password.email') }}" class="auth-form">
         @csrf

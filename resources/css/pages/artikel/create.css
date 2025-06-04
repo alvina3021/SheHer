@@ -7,6 +7,8 @@
   align-items: center;
   border-bottom: 1px solid #ffffff;
   height: 12%;
+  gap: 2rem;      
+  padding: 1rem 2.5rem;
 }
 
 .header-logo {
@@ -55,7 +57,7 @@
 .create-article-container {
     max-width: 900px;
     margin: 40px auto;
-    padding: 0 20px 100px; /* ruang bawah untuk footer */
+    padding: 0 20px 100px; 
     font-family: sans-serif;
 }
 
@@ -83,7 +85,7 @@
 }
 
 .upload-link {
-    color: #a21caf; /* Ungu */
+    color: #a21caf; 
     font-weight: 600;
     cursor: pointer;
 }
